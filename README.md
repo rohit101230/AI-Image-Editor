@@ -4,6 +4,12 @@ A Python-based AI Image Editor that generates and edits images using natural-lan
 
 Instead of using complicated editing tools, users can simply describe what they want to create or change, and the application uses AI image generation to produce the result.
 
+## 🖥️ Application Preview
+
+Here is a preview of the AI Image Editor:
+
+![AI Image Editor Screenshot](screenshot.png)
+
 ## ✨ Features
 
 * 🖼️ Open existing images
@@ -51,6 +57,8 @@ AI-Image-Editor/
 ├── .env.example
 ├── .gitignore
 ├── README.md
+├── screenshot.png
+├── edited_output.png
 └── test_output.png
 ```
 

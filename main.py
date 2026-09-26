@@ -19,6 +19,7 @@ class AIImageEditor:
         self.original_image = None
         self.history = []
 
+        # API key is entered by the user during the session.
         self.api_key = ""
 
         self.setup_ui()
@@ -474,7 +475,7 @@ class AIImageEditor:
                     tools=[
                         {
                             "type": "image_generation",
-                            "model": "gpt-image-2.5-sunburst",
+                            "model": "gpt-image-2",
                             "size": "1024x1024",
                             "quality": "medium"
                         }
@@ -528,7 +529,7 @@ class AIImageEditor:
                     tools=[
                         {
                             "type": "image_generation",
-                            "model": "gpt-image-2.5-sunburst",
+                            "model": "gpt-image-2",
                             "action": "edit",
                             "size": "1024x1024",
                             "quality": "medium"
@@ -613,7 +614,7 @@ class AIImageEditor:
             )
 
             self.status.config(
-                text="❌ Generation failed.",
+                text="Generation failed. Check the error message.",
                 fg="#f87171"
             )
 
@@ -644,7 +645,7 @@ class AIImageEditor:
         self.show_image()
 
         self.status.config(
-            text="↩ Previous version restored.",
+            text="↩ Last change undone.",
             fg="#34d399"
         )
 
